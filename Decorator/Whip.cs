@@ -2,18 +2,18 @@ namespace Decorator;
 
 public class Whip : CondimentDecorator
 {
-    public Whip(Beverage beverage): base(beverage)
+    public Whip(Beverage beverage)
     {
-        
+        Beverage = beverage;
     }
 
     public override string GetDescription()
     {
-        return base.Beverage.GetDescription() + ", Whip";
+        return Beverage.GetDescription() + ", Whip";
     }
 
     public override decimal Cost()
     {
-        return base.Beverage.Cost() + 0.5m;
+        return Beverage.Cost() + 0.5m;
     }
 }

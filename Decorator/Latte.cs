@@ -2,9 +2,9 @@ namespace Decorator;
 
 public class Latte : Beverage
 {
-    public override string GetDescription()
+    public Latte()
     {
-        return "Latte";
+        Description = "Latte";
     }
 
     public override decimal Cost()
