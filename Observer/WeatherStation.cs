@@ -11,9 +11,9 @@ namespace DesignPatterns
       IObserver currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
       IObserver stupidDisplay = new StupidDisplay(weatherData);
 
-      weatherData.setMeasurements(1.0f, 2.0f, 6.0f);
+      weatherData.SetMeasurements(1.0f, 2.0f, 6.0f);
       weatherData.Remove(stupidDisplay);
-      weatherData.setMeasurements(2.0f, 4.0f, 8.0f);
+      weatherData.SetMeasurements(2.0f, 4.0f, 8.0f);
     }
 
   }

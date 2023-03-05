@@ -37,18 +37,14 @@ namespace DesignPatterns
       }
     }
 
-    public void setMeasurements(float temperature, float humidity, float pressure)
+    public void SetMeasurements(float temperature, float humidity, float pressure)
     {
       this.temperature = temperature;
       this.humidity = humidity;
       this.pressure = pressure;
-      this.measurementsChanged();
-    }
-
-    public void measurementsChanged()
-    {
       this.Notify();
     }
+
 
 
 
